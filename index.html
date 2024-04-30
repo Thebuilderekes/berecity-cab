@@ -30,6 +30,12 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Navigation -->
@@ -92,7 +98,7 @@
             <a
               class="text-clr-black bg-yellow animate__animated animate__fadeInUp text-decoration-none underline-none rounded-pill px-3 px-md-4 py-3 md:px-5 md:py-5 d-inline-block"
               href="#featured-apartments"
-              >View apartments</a
+              >View pricing</a
             >
 
             <a
@@ -106,36 +112,49 @@
       <!-- Featured apartments section -->
 
       <section
-        class="col-12 featured-apartments bg-grey py-3 p-md-4"
-        id="featured-apartments"
+        class="col-12 services bg-grey py-5 px-4"
+        id="services"
       >
+            <h2 class="text-center py-3">Services</h2>
         <div class="row">
-          <div class="col">
-            <h2 class="text-center">Services</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-4">
-            <article class="text-center">
-              <figure><img src="" alt="" /></figure>
-              <h3>24/7 Support</h3>
+          <div class="col-12 col-lg-6">
+
+            <article class="service-card d-flex flex-column justify-content-center align-items-center py-3">
+              <figure>
+                <img src="./assets/images/icons/icons8-car.gif" alt="animated bouncing car icon" />
+              </figure>
+              <h3>Commute</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+              
             </article>
           </div>
 
-          <div class="col-12 col-lg-4">
-            <article class="text-center">
-              <figure><img src="" alt="" /></figure>
-              <h3>Any distance within Yenagoa Town</h3>
+          <div class="col-12 col-lg-6">
+            <article class="service-card d-flex flex-column justify-content-center align-items-center py-3">
+              <figure class>
+                <img src="./assets/images/icons/icons8-shipping.gif" alt="animated swoosh shipping van icon" />
+
+              </figure>
+              <h3>Courier Services</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
             </article>
           </div>
 
-          <div class="col-12 col-lg-4">
-            <article class="text-center">
-              <figure><img src="" alt="" /></figure>
-              <h3>something</h3>
-            </article>
-          </div>
+              <input type="color" name="" value="">
         </div>
+
+      </section>
+
+      <section
+        class="col-12 contact-us px-4 py-5 d-flex flex-column justify-content-center align-items-center"
+        id="contact-us"
+      >
+            <h2 class="text-center mt-3">Contact US</h2>
+<ul>
+    <li><a href="tel:+234"><i class="fas fa-phone"></i> +1 (234) 567-890</a></li>
+  </ul>
+              <p></p>
+
       </section>
     </main>
 
@@ -145,7 +164,7 @@
       <div class="mx-3 mx-md-5 py-5">
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <h3>Berecity cabs</h3>
+            <h3 class="fw-bold">Berecity cabs</h3>
             <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt.

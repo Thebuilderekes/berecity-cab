@@ -22,7 +22,7 @@ Version: 1.0
 /*              RESET CSS                  "/
 /*********************************************/
 
-* {
+*, ul {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -105,8 +105,9 @@ h6 {
   --soft-grey: #cac9c9;
   --black: #000000;
   --mid-black: #212121;
+  --semi-black: #8c8c8c;
   --blue: #07058d;
-  --yellow: yellow;
+  --yellow: #ddcc08;
   --mid-blue: #312ef3;
   --light-blue: #dee7fd;
   --light-gold: #f1ddaa;
@@ -180,15 +181,54 @@ h6 {
   color: var(--light-blue);
 }
 
+
+
+/*********************************************/
+/*              4. GENERAL STYLES             "/
+/*********************************************/
+
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
 
+
+
+  
+
+h2 {
+  font-size: var(--semi-large-fs);
+  font-weight: 900;
+}
+
+h3 {
+
+  font-size: var(--semi-medium-fs);
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: var(--medium-fs);
+  }
+}
+
+main p {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+
+main p {
+  width: 100%;
+}
+}
 /*********************************************/
 /*              4. NAVBAR CSS                  "/
 /*********************************************/
 
+nav {
+  border-bottom: 1px solid  #121212;
+}
 nav ul li a {
   cursor: pointer;
   color: var(--light-blue) !important;
@@ -259,19 +299,47 @@ nav .navbar-brand {
   }
 }
 
-h2 {
-  font-size: var(--semi-large-fs);
+/*********************************************/
+/*      7. SERVICES SECTION STYLES  "/
+/*********************************************/
+
+.services .service-card {
+  border: 1px solid var(--semi-black);
+}
+.services img {
+
+  width: 50px;
+  height:50px;
+
 }
 
-@media (min-width: 800px) {
-  h2 {
-    font-size: var(--large-fs);
-  }
-}
 
 /*********************************************/
-/*      7. house-cardS CSS - HOME PAGE  "/
+/*****CONTACT US SECTION STYLES**/
 /*********************************************/
+.contact-us {
+  background-color: var(--yellow) ;
+}
+
+@media (min-width: 900px) {
+.contact-us ul li a {
+
+  font-size: var(--semi-large-fs);  
+}
+
+}
+
+.contact-us ul li a {
+  color: var(--mid-black);
+
+}
+
+@media (max-width: 800px) {
+.contact-us ul li a {
+  font-size: var(--medium-fs);
+}
+
+}
 
 footer {
   background-color: var(--black);
