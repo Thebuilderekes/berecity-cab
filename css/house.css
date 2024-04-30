@@ -1,0 +1,89 @@
+/* CSS Index
+---------------------------------------
+1. CAROUSEL CSS
+2. CARDS CSS
+
+*/
+
+/*********************************************/
+/*              CAROUSEL CSS                  "/
+/*********************************************/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--mid-black);
+  font-size: 5rem;
+}
+
+/*********************************************/
+/*              CARDS CSS - HOUSE PAGE        "/
+/*********************************************/
+
+.contact-card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--grey);
+}
+
+.card-content {
+  padding: var(--medium-spacing);
+}
+
+.card-title {
+  font-size: var(--semi-medium-fs);
+}
+
+.card-title {
+  font-size: var(--medium-fs);
+  font-family: "Archivo Black", sans-serif;
+}
+
+.card-address,
+.card-price {
+  font-size: var(--semi-medium-fs);
+  /* font-weight: 700; */
+  margin-bottom: 5px;
+}
+
+@media (min-width: 900px) {
+  .card-title {
+    font-size: var(--medium-fs);
+  }
+}
+
+@media (min-width: 900px) {
+  .card-price {
+    font-size: var(--semi-medium-fs);
+  }
+}
+
+dl {
+  font-weight: bold;
+}
+
+.contact-button {
+  font-size: var(--smallest-fs);
+  font-weight: 700;
+  padding: var(--small-spacing) 15px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .contact-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--small-fs);
+  }
+}
