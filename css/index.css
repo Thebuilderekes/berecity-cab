@@ -108,6 +108,8 @@ h6 {
   --semi-black: #8c8c8c;
   --blue: #07058d;
   --yellow: #ddcc08;
+  --light-yellow: #f4fbc1;
+  --dark-yellow: #e6c005;
   --mid-blue: #312ef3;
   --light-blue: #dee7fd;
   --light-gold: #f1ddaa;
@@ -192,10 +194,6 @@ h6 {
   margin: 0 auto;
 }
 
-
-
-  
-
 h2 {
   font-size: var(--semi-large-fs);
   font-weight: 900;
@@ -226,7 +224,7 @@ main p {
 /*              4. NAVBAR CSS                  "/
 /*********************************************/
 
-nav {
+.home-nav {
   border-bottom: 1px solid  #121212;
 }
 nav ul li a {
@@ -303,10 +301,12 @@ nav .navbar-brand {
 /*      7. SERVICES SECTION STYLES  "/
 /*********************************************/
 
-.services .service-card {
+
+
+.our-services .service-card {
   border: 1px solid var(--semi-black);
 }
-.services img {
+.our-services img {
 
   width: 50px;
   height:50px;
@@ -314,11 +314,17 @@ nav .navbar-brand {
 }
 
 
+.our-services a:hover {
+
+  background-color: var(--dark-yellow);
+
+}
+
 /*********************************************/
 /*****CONTACT US SECTION STYLES**/
 /*********************************************/
 .contact-us {
-  background-color: var(--yellow) ;
+  background-color: var(--light-yellow) ;
 }
 
 @media (min-width: 900px) {
