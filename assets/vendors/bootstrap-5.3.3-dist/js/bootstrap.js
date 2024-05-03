@@ -7,10 +7,10 @@
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory(require("@popperjs/core")))
     : typeof define === "function" && define.amd
-      ? define(["@popperjs/core"], factory)
-      : ((global =
-          typeof globalThis !== "undefined" ? globalThis : global || self),
-        (global.bootstrap = factory(global.Popper)));
+    ? define(["@popperjs/core"], factory)
+    : ((global =
+        typeof globalThis !== "undefined" ? globalThis : global || self),
+      (global.bootstrap = factory(global.Popper)));
 })(this, function (Popper) {
   "use strict";
 
@@ -65,7 +65,9 @@
       if (!instanceMap.has(key) && instanceMap.size !== 0) {
         // eslint-disable-next-line no-console
         console.error(
-          `Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`,
+          `Bootstrap doesn't allow more than one instance per element. Bound instance: ${
+            Array.from(instanceMap.keys())[0]
+          }.`,
         );
         return;
       }
@@ -1887,8 +1889,9 @@
         return;
       }
       const dimension = this._getDimension();
-      this._element.style[dimension] =
-        `${this._element.getBoundingClientRect()[dimension]}px`;
+      this._element.style[dimension] = `${
+        this._element.getBoundingClientRect()[dimension]
+      }px`;
       reflow(this._element);
       this._element.classList.add(CLASS_NAME_COLLAPSING);
       this._element.classList.remove(CLASS_NAME_COLLAPSE, CLASS_NAME_SHOW$7);
