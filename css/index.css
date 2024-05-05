@@ -85,6 +85,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
+
+home_h2 {
+  text-transform: uppercase;
+}
+
 /*********************************************/
 /*              2. VARIABLES CSS                  "/
 /*********************************************/
@@ -336,6 +341,11 @@ nav .navbar-brand {
     font-size: var(--medium-fs);
   }
 }
+
+.contact_h2{
+color: var(--black);
+}
+
 
 footer {
   background-color: var(--black);

@@ -57,11 +57,14 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link px-md-3" aria-current="page" href="/">Home</a>
+              <a class="nav-link px-md-3"
+                href="/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3" href="./about.html">About</a>
-            </li>
+            <li class="nav-item"
+                aria-current="page" 
+            >
+              <a class="nav-link 
+                px-md-3" href="./about.html">About</a>
             </li>
             <li class="nav-item">
               <a
@@ -101,17 +104,18 @@
       </nav>
       <!-- Who we are - our core values section -->
       <section
-        class="about-us m-3 m-md-5 animate__animated animate__fadeIn animate__delay-1s"
+        class="about-us d-flex flex-column align-items-center m-3 m-md-5 animate__animated animate__fadeIn animate__delay-1s"
       >
         <article class="who-we-are">
           <h2
-            class="home__h2 py-5 text-center animate__animated animate__fadeIn"
+            class="home__h2 py-2 text-center animate__animated animate__fadeIn"
           >
             WHO WE ARE
           </h2>
+          <div class="row">
             <p>
               BERECITY CAB is a transportation company operating in a specific area, offering reliable and efficient cab services to customers. Our fleet consists of well-maintained and high-quality vehicles, driven by professional and courteous drivers. Our commitment to customer satisfaction sets us apart from competitors. 
-              BERECITY CAB isn't just another transportation company. We're your reliable partner in getting you where you need to be, safely, comfortably, and efficiently within Yenagoa.
+              We are not just another transportation company. We are your reliable partner in getting you where you need to be, safely, comfortably, and efficiently within Yenagoa.
             </p>
             <p>
               <b>More than just a ride, we offer you peace of mind.</b> Our commitment to excellence starts with our fleet. We meticulously maintain a diverse range of high-quality vehicles to suit your needs, whether you require a standard sedan for a quick errand or a spacious SUV for a family outing. Every car undergoes regular inspections and cleaning to ensure a smooth and comfortable ride.
@@ -119,25 +123,26 @@
             <p>
               <b>Our dedication to customer satisfaction is what truly sets us apart.</b> We understand that every ride is unique, and we go the extra mile to meet your individual needs. Whether you need a ride to the airport for an important meeting or a safe trip home after a night out, you can count on BERECITY CAB to be there for you.
             </p>
+          </div>
         </article>
         </section>
          
-      <section class="m-3 m-md-5">
+      <section class="m-3 m-md-5 d-flex flex-column align-items-center ">
         <article class="core-values">
-          <h2 class="home__h2 pt-5  text-center">OUR CORE VALUES</h2>
-          <div class="row p-4 ">
+          <h2 class="home__h2 py-2  text-center">OUR CORE VALUES</h2>
+          <div class="row ">
             <p class="col-12 col-md-4">
-            <strong> Innovation: </strong> Our streamlined online platform and We are constantly innovating and 
+            <strong> Innovation: </strong> We are constantly innovating and 
             improving our technology to provide the best possible service. We are committed to sustainable practices            and work towards a greener future of transportation.
             Community: We believe in building a strong community of riders and drivers who can rely on each other.
             </p>
             <p class="col-12 col-md-4">
               <strong>Customer Focus:</strong> 
-            We put our customers first and strive to exceed their expectations with every ride.
+            Our commitment to customer focus is rooted in our core values of respect, reliability, and excellence. We believe in treating every customer with dignity and providing a safe and comfortable environment for all. We are constantly innovating and improving our services to ensure we continue to exceed your expectations.
             </p>
             <p class="col-12 col-md-4">
               <strong>Safety First: </strong> 
-            Safety is our top priority. We implement rigorous measures to ensure a secure and comfortable experience              for both riders and drivers.
+       Safety is at the heart of everything we do. We understand that getting from point A to point B is important, but we believe it shouldn't come at the expense of your well-being. That's why we implement a series of rigorous measures to ensure a secure and comfortable experience for both our riders and drivers.
             </p>
           </div>
         </article>
@@ -157,11 +162,11 @@
 
     <!-- footer -->
 
-    <footer class="footer">
-      <div class="mx-3 mx-md-5 py-5">
+    <footer class="footer pt-5">
+      <div class="mx-md-5">
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <h3>Rent a place</h3>
+            <h3>Berecity cab</h3>
             <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt.
@@ -192,14 +197,12 @@
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h6 class="text-uppercase fw-bold mb-4">Services</h6>
             <ul class="list-unstyled mb-0">
+
               <li class="mb-2">
-                <a href="#" class="text-decoration-none">Register</a>
+                <a href="#" class="text-decoration-none">On-demand Rides</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="text-decoration-none">Sell</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none">Rent</a>
+                <a href="#" class="text-decoration-none">Pick up and delivery services</a>
               </li>
               <li class="mb-2">
                 <a href="#" class="text-decoration-none">Our Products</a>
@@ -208,7 +211,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0">
             <h6 class="text-uppercase fw-bold mb-4">Newsletter</h6>
-            <p class="mb-4">Sign up to get updates about available houses</p>
+            <p class="mb-4">Sign up to get updates</p>
             <div class="p-1 rounded border">
               <form class="input-group">
                 <input
