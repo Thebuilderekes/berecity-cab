@@ -72,7 +72,7 @@ section p {
 
 
 section p {
-  font-size: var(--semi-medium-fs);
+  font-size: var(--small-fs);
 }
 
 /*********************************************/
@@ -95,7 +95,6 @@ article {
 }
 
 .who-we-are {
-  padding: var(--medium-spacing);
   margin-bottom: var(--large-spacing);
   border: 1px solid var(--light-yellow);
   background-color: var(--mid-black);
