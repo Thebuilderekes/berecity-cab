@@ -23,7 +23,7 @@ Version: 1.0
 /*********************************************/
 
 *,
-ul {
+ul, p {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -209,6 +209,11 @@ h2 {
 
 h3 {
   font-size: var(--semi-medium-fs);
+}
+
+article {
+
+  height: 300px;
 }
 
 @media (max-width: 800px) {
