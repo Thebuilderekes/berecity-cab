@@ -1,21 +1,20 @@
 /*
-Theme name: Spark - Bold HTML5 Template
 Author: buildervision1@gmail.com
 Support: buildervision1@gmail.com
-Description: Creative HTML5 and Bootstrap template
+Description: Berecit cab Bootstrap
 Version: 1.0
 */
 
 /* CSS Index
 ---------------------------------------
-1. RESET CSS
-2. VARIABLES CSS
-3. UTILITY CSS
-4. NAVBAR CSS
-5. HERO SECTION
-6. TAB CONTENT
-7. HOUSE CARDS CSS - HOME PAGE
-8. FOOTER CSS 
+1. RESET 
+2. VARIABLES
+3. UTILITY 
+4. GENERAL STYLES
+5. NAVBAR 
+6. HERO SECTION
+7. SERVICES 
+8. CONTACT US 
 */
 
 /*********************************************/
@@ -23,7 +22,8 @@ Version: 1.0
 /*********************************************/
 
 *,
-ul, p {
+ul,
+p {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -50,7 +50,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 /*
      Improve media defaults
@@ -84,7 +84,6 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
 
 home_h2 {
   text-transform: uppercase;
@@ -202,6 +201,11 @@ home_h2 {
   margin: 0 auto;
 }
 
+.no-hover:hover {
+  text-decoration:none;
+  color: var(--dark-yellow);
+}
+
 h2 {
   font-size: var(--semi-large-fs);
   font-weight: 900;
@@ -212,14 +216,7 @@ h3 {
 }
 
 article {
-
-  height: 300px;
-}
-
-@media (max-width: 800px) {
-  h2 {
-    font-size: var(--medium-fs);
-  }
+  height: 350px;
 }
 
 .home-main p {
@@ -232,7 +229,7 @@ article {
   }
 }
 /*********************************************/
-/*              4. NAVBAR CSS                  "/
+/*              5. NAVBAR CSS                  "/
 /*********************************************/
 
 .home-nav {
@@ -274,7 +271,7 @@ nav .navbar-brand {
 }
 
 /*********************************************/
-/*              5. HERO SECTION CSS              "/
+/*              6. HERO SECTION CSS              "/
 /*********************************************/
 .hero-section {
   font-weight: 700 !important;
@@ -291,7 +288,7 @@ nav .navbar-brand {
       #000 30%,
       transparent 100%
     ),
-    url("../assets/images/car-images/desktop-optimised/car-bg-black.jpg");
+    url('../assets/images/car-images/desktop-optimised/car-bg-black.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -314,18 +311,29 @@ nav .navbar-brand {
 
 .our-services .service-card {
   border: 1px solid var(--semi-black);
-}
-.our-services img {
-  width: 50px;
-  height: 50px;
+  box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.75);
 }
 
+.our-services .service-card h2 {
+  font-size: var(--semi-large-fs);
+}
+
+@media (min-width: 900px) {
+  .our-services .service-card h2 {
+    font-size: var(--large-fs);
+  }
+}
+.our-services .service-card h3 {
+  font-size: var(--medium-fs);
+}
 .our-services a:hover {
   background-color: var(--dark-yellow);
 }
 
 /*********************************************/
-/*****CONTACT US SECTION STYLES**/
+/*****8 CONTACT US SECTION STYLES**/
 /*********************************************/
 .contact-us {
   background-color: var(--yellow);
@@ -347,10 +355,9 @@ nav .navbar-brand {
   }
 }
 
-.contact_h2{
-color: var(--black);
+.contact_h2 {
+  color: var(--black);
 }
-
 
 footer {
   background-color: var(--black);
