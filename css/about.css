@@ -75,31 +75,13 @@
 /*   2. WHO WE ARE SECTION CSS           "/
 /*********************************************/
 
-article {
+section.about-us p {
   width: 80%;
 }
 
 @media (max-width: 800px) {
-  article {
+  section.about-us p {
     width: 100%;
-  }
-}
-
-.who-we-are {
-  margin-bottom: var(--large-spacing);
-  border: 1px solid var(--light-yellow);
-  background-color: var(--mid-black);
-
-  color: var(--light-yellow);
-}
-
-@media (min-width: 800px) {
-  .who-we-are {
-    margin-bottom: var(--extra-large-spacing);
-  }
-  .who-we-are,
-  .core-values {
-    padding: var(--large-spacing);
   }
 }
 
@@ -107,14 +89,6 @@ article {
 /* 3. OUR CORE VALUES SECTION CSS           "/
 /*********************************************/
 
-.core-values {
-  border: 1px solid var(--light-yellow);
-  color: var(--light-yellow);
-  background-color: var(--mid-black);
-}
-
-@media (min-width: 800px) {
-  footer p {
-    font-size: var(--semi-medium-fs);
-  }
+footer p {
+  font-size: var(--semi-medium-fs);
 }

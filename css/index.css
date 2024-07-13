@@ -1,7 +1,7 @@
 /*
 Author: buildervision1@gmail.com
 Support: buildervision1@gmail.com
-Description: Berecit cab Bootstrap
+Description: Berecity cab Bootstrap
 Version: 1.0
 */
 
@@ -14,7 +14,8 @@ Version: 1.0
 5. NAVBAR 
 6. HERO SECTION
 7. SERVICES 
-8. CONTACT US 
+8. CONTACT US
+9. FOOTER
 */
 
 /*********************************************/
@@ -47,6 +48,7 @@ html {
 }
 
 body {
+  width: 100%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -85,7 +87,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
-home_h2 {
+.home_h2 {
   text-transform: uppercase;
 }
 
@@ -97,6 +99,7 @@ home_h2 {
   /*==================Font size============================*/
 
   --large-fs: 3.75rem; /*60px*/
+  --mid-large-fs: 2.5rem;
   --semi-large-fs: 1.875rem; /*30px*/
   --medium-fs: 1.5rem; /*24px*/
   --semi-medium-fs: 1.125rem; /*18px*/
@@ -202,7 +205,7 @@ home_h2 {
 }
 
 .no-hover:hover {
-  text-decoration:none;
+  text-decoration: none;
   color: var(--dark-yellow);
 }
 
@@ -296,6 +299,7 @@ nav .navbar-brand {
 
 .home__h1 {
   font-size: var(--semi-large-fs);
+  font-weight: 800;
   color: var(--grey);
 }
 
@@ -308,15 +312,16 @@ nav .navbar-brand {
 /*********************************************/
 /*      7. SERVICES SECTION STYLES  "/
 /*********************************************/
-
+.our-services h2 {
+  font-size: var(--mid-large-fs);
+  color: var(--mid-black);
+}
 .our-services .service-card {
   border: 1px solid var(--semi-black);
   border-radius: 15px;
-  box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.15);
+  height: 500px;
 }
-
 .our-services .service-card h2 {
   font-size: var(--semi-large-fs);
 }
@@ -329,10 +334,26 @@ nav .navbar-brand {
 .our-services .service-card h3 {
   font-size: var(--medium-fs);
 }
-.our-services a:hover {
-  background-color: var(--dark-yellow);
+
+.our-services dl {
+  border-radius: 20px;
+  font-size: var(--medium-fs);
 }
 
+.our-services dl dt {
+  text-decoration: underline;
+}
+.our-services dl dd {
+  position: relative;
+  padding-left: 20px;
+}
+
+.our-services dl dd::before {
+  content: '•'; /* Unicode for disc character */
+  position: absolute;
+  left: 0;
+  color: black; /* Or any color you prefer */
+}
 /*********************************************/
 /*****8 CONTACT US SECTION STYLES**/
 /*********************************************/
@@ -360,6 +381,9 @@ nav .navbar-brand {
   color: var(--black);
 }
 
+/*********************************************/
+/*****9 FOOTER SECTION STYLES**/
+/*********************************************/
 footer {
   background-color: var(--black);
   color: var(--soft-grey);
